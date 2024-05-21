@@ -1,5 +1,5 @@
 # Flutter Docker Template
-## Description
+
 This is a Flutter project template which able to quickly create a Flutter Web App environment through docker and develop with VSCode.
 
 ![docker-flutter](https://github.com/liuyuweitarek/flutter-docker-template/assets/54787524/eec8d154-0d2e-4c80-94b9-3448e21a7b6e)
@@ -46,9 +46,8 @@ This is a Flutter project template which able to quickly create a Flutter Web Ap
 7. Follow the `Debug step` below to see whether the app is able to be running successfully or not.
 
 ## Builds
-The project is divided into two types of builds: **Debug** and **Release**.
 
-### Debug
+### 1. Debug
 
 This build type is used for development and testing. It is the default build type.
 
@@ -59,7 +58,7 @@ This build type is used for development and testing. It is the default build typ
     ```
 3. Visit `http://localhost:9001` in your browser to the rendering effect. Also, you can see the logs in the terminal.
 
-### Release
+### 2. Build in Local Container
 This build type is used for local production.
 
 1. Run the following command in the terminal:
@@ -84,7 +83,9 @@ Otherwise,
 $ flutter exec -it flutter-web-{YOUR_PROJECT_NAME} bash /usr/local/script/flutter-web-build.sh
 ```
 
-#### What's "Release build" actually do in the docker-compose.yaml file?
+</br>
+
+#### What's "building in local container" actually doing in the docker-compose.yaml file?
 
 **Step 1: Create the Release Build**
 
