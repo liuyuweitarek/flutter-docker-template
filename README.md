@@ -17,7 +17,7 @@ This is a Flutter project template which able to quickly create a Flutter Web Ap
 
     2. Follow the formats in the TODOs.
 
-    3. After lauch the template and did the steps above, you can customize the `Description`.
+    3. After lauch the template and did the steps above, you can customize the `Description` and change this item to `1. Install Project`.
 
 2. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
@@ -30,9 +30,12 @@ This is a Flutter project template which able to quickly create a Flutter Web Ap
     Please note that the **"VSCode Remote - Containers"** extension allows you to develop inside a containerized environment, which can be useful for Flutter projects that require specific dependencies or configurations.
 
 4. Install VScode extension **Flutter**. The same steps as above.
+
 5. Create a new flutter project in `./src`.
     1. `ctrl + shift + p` (Windows/Linux) or `cmd + shift + p` (Mac) searching for `Flutter: New Project` to create a new flutter project.
     2. Select folder `./src` and build project.
+
+
 6. Run the following command in your terminal:
     ```bash
     $ docker compose up --build -d
@@ -69,20 +72,20 @@ $ docker compose up --build -d
 Run the following command in the terminal(not in the container terminal):
 
 ```bash
-$ flutter exec -it flutter-web-simple_news_app bash /usr/local/script/flutter-web-init.sh
+$ flutter exec -it flutter-web-{YOUR_PROJECT_NAME} bash /usr/local/script/flutter-web-init.sh
 ```
 
 Otherwise,
 
 ```bash
-$ flutter exec -it flutter-web-simple_news_app bash /usr/local/script/flutter-web-build.sh
+$ flutter exec -it flutter-web-{YOUR_PROJECT_NAME} bash /usr/local/script/flutter-web-build.sh
 ```
 
 #### What's "Release build" actually do in the docker-compose.yaml file?
 
 **Step 1: Create the Release Build**
 
-To create a release build of your Flutter web app, navigate to the src/simple_news_app directory in your terminal and run the following command:
+To create a release build of your Flutter web app, navigate to the src/{YOUR_PROJECT_NAME} directory in your terminal and run the following command:
 
 ```bash
 $ flutter build web
@@ -98,7 +101,7 @@ In the `docker-compose.yaml` file, locate the flutter-nginx service and update t
 
 ```yaml
 volumes:
-  - "./src/simple_news_app/build/web:/var/www/html"
+  - "./src/{YOUR_PROJECT_NAME}/build/web:/var/www/html"
 ```
 
 This will mount the ./build/web directory to the /var/www/html directory inside the Nginx container.
