@@ -88,7 +88,7 @@ $ flutter exec -it flutter-web-{YOUR_PROJECT_NAME} bash /usr/local/script/flutte
 
 **Step 1: Create the Release Build**
 
-To create a release build of your Flutter web app, navigate to the src/{YOUR_PROJECT_NAME} directory in your terminal and run the following command:
+To create a release build of your Flutter web app, navigate to the `src/{YOUR_PROJECT_NAME}` directory in your terminal and run the following command:
 
 ```bash
 $ flutter build web
