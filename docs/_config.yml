@@ -1,4 +1,5 @@
-title: {{site.data.github.project.repository}}
+# TODO: Add your project title here
+title: Flutter Docker Template
 description: {{site.data.github.project.description}}
 baseurl: ""
 url: {{site.data.github.project.repository_url}}
@@ -12,7 +13,9 @@ exclude:
   - ".gitignore"
   - ".editorconfig"
 
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
 color_scheme: tarek
 
 # Define Jekyll collections
