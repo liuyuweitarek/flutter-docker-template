@@ -1,0 +1,44 @@
+{% if page.usetocbot %} 
+    <!-- tocbot is an awesome table of contents generator, see: https://tscanlin.github.io/tocbot/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+
+    <script>
+      /* Dynamically add the toc navbar after the side-bar element. This allows us
+         to *not* have to override default.html in _layouts */
+      let sideBarElements = document.getElementsByClassName('side-bar');
+      if (sideBarElements.length > 0){
+        let tocNav = document.createElement('nav');
+        tocNav.setAttribute("id", "tocbot-toc");
+        tocNav.classList.add("js-toc");
+        tocNav.classList.add("tocbot-right");
+        sideBarElements[0].after(tocNav);
+      }
+
+      /** WARNING: YOU MUST USE C MULTI-LINE COMMENT STYLE RATHER THAN // BECAUSE 
+       *  OF HOW JEKYLL COMPILES THIS FILE INTO SINGLE LINES **/
+      tocbot.init({
+        /* Where to render the table of contents. */
+        tocSelector: '.js-toc',
+        /* Where to grab the headings to build the table of contents. */
+        contentSelector: '.main-content',
+        /* How many heading levels should collapse. Default is 0 */
+        collapseDepth: 2,
+        /* Which headings to grab inside of the contentSelector element. */
+        headingSelector: 'h1, h2, h3, h4',
+      });
+
+      /* Track scrolling to show/hide the tocbot navigation bar on right side */
+      var onScrollHandler = function (event) {
+
+        /* End event listener after visitor scrolls past 500px */
+        if (window.pageYOffset > 500) {
+          window.removeEventListener('scroll', onScrollHandler, false);
+          document.getElementById("tocbot-toc").style.visibility = "visible";
+        }
+        /* console.log("window scroll event:", window.pageYOffset); */
+      };
+
+      /* Listen for scroll events */
+      window.addEventListener('scroll', onScrollHandler, false);
+    </script>
+  {% endif %}

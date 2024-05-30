@@ -1,0 +1,16 @@
+/**** FOR TOCBOT ******/
+/** See: https://tscanlin.github.io/tocbot/ **/
+#tocbot-toc{
+    position: fixed !important;
+    visibility: visible !important;
+    top: 90px;
+    left: calc((100% - 1064px) / 2 + 264px + 800px); 
+    width:250px;
+    right: 0px;
+    z-index: 10;
+    background-color:#27262b;
+  }
+  
+  #tocbot-toc ol {
+    list-style: none;
+}

@@ -1,0 +1,10 @@
+# TODO: Add your Github info here
+author:
+  name: Tarek (Yu-Wei Liu)
+  account: liuyuweitarek
+  link: https://github.com/liuyuweitarek
+project:
+  name: Flutter Docker Template
+  description: This is a Flutter project template which able to quickly create a Flutter Web App environment through docker and develop with VSCode.
+  repository: flutter-docker-template
+  reposotry_url: https://github.com/liuyuweitarek/flutter-docker-template

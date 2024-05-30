@@ -30,3 +30,11 @@ services:
       - "./src/${APPLICATION_NAME}/build/web:/var/www/html"
     ports:
       - 80:80
+  # Only for docs debug locally
+  # jekyll:
+  #   container_name: "jekyll-${APPLICATION_NAME}"
+  #   build: ./docs
+  #   volumes:
+  #     - ./docs:/site
+  #   ports:
+  #     - '4000:4000'
