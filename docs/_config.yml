@@ -1,6 +1,6 @@
 # TODO: Add your project title and baseurlhere
 title: Flutter Docker Template
-description: {{ site.data.github.project.description }}
+description: A Flutter project template which able to quickly create a Flutter Web App environment through docker and develop with VSCode.
 baseurl: "flutter-docker-template"
 url: https://github.com/liuyuweitarek/
 github: [metadata]
@@ -40,22 +40,25 @@ just_the_docs:
       # Supports true or false (default)
       # search_exclude: true
 
+# TODO: Add your repository info here
 nav_external_links:
   - title: Source Code
-    url: {{ site.data.github.project.repository_url }}
+    url: https://github.com/liuyuweitarek/flutter-docker-template/
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
 
+# TODO: Add your repository info here
 # Aux links for the upper right navigation
 aux_links:
   "View On Github":
-    - {{ site.data.github.project.repository_url }}
+    - https://github.com/liuyuweitarek/flutter-docker-template/
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
+# TODO: Add your repository info here
 footer_content:
-  -  Found an error? Feel free to file a <a href="{{site.data.github.project.repository_url}}/issues">GitHub Issue</a>. :)
+  -  Found an error? Feel free to file a <a href="https://github.com/liuyuweitarek/flutter-docker-template/issues">GitHub Issue</a>. :)
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -64,7 +67,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: {{ site.data.github.project.repository_url }} # the github URL for your repo
+gh_edit_repository: https://github.com/liuyuweitarek/flutter-docker-template/ # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
