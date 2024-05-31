@@ -13,9 +13,7 @@ exclude:
   - ".gitignore"
   - ".editorconfig"
 
-remote_theme: just-the-docs/just-the-docs
-plugins:
-  - jekyll-remote-theme
+theme: just-the-docs
 color_scheme: dark
 
 # Define Jekyll collections
