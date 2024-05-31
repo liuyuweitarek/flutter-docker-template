@@ -16,7 +16,7 @@ exclude:
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
-color_scheme: tarek
+color_scheme: dark
 
 # Define Jekyll collections
 collections:
