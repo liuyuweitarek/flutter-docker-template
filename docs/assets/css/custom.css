@@ -1,3 +1,99 @@
+
+/* Reference to Professor Jon E. Froehlich and the Makeability Lab awesome website! */ 
+/* https://github.com/makeabilitylab/physcomp/blob/master/assets/css/custom.css */
+
+.main-content a{
+  white-space: normal;
+}
+
+.margin-zero{
+  margin: 0;
+}
+
+.text-right{
+  text-align: right;
+}
+
+cite{
+  text-align: right;
+  font-size: smaller;
+}
+
+/* to add a margin at the bottom of our code blocks */
+figure.highlight {
+  margin-bottom: 1em;
+} 
+
+/* Without this, the gist it script's prettify font is too large */
+.gist-it-gist{
+  font-size: small;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.img-50{
+  width: 50px;
+}
+
+/** FOR TABLES **/ 
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) td,
+table tr:nth-child(even) th {
+  background-color: inherit;
+}
+
+/** FOR SMALL TABLES **/
+.condensed-table{
+  min-width: 0px;
+}
+
+.condensed-table th, td{
+  min-width: 0px;
+  font-size: 12px !important;
+}
+
+.table-max-width300 {
+  max-width: 300px;
+  min-width: 0px;
+  overflow-x: auto; /* This will add a scrollbar if the content exceeds 300px */
+}
+
+/** VIBRATION TABLE **/
+.vibro-table{
+  min-width: 0px;
+  padding: 0.25rem;
+}
+
+.vibro-table th, td{
+  padding: 0.25rem;
+  min-width: 0px;
+  font-size: 12px !important;
+}
+
+.vibro-table img{
+  width: 60px !important;
+  min-width: 60px;
+}
+
+/* image align center */
+/* See: https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/
+/* https://github.com/mmistakes/minimal-mistakes/blob/a2385e25840f38d573d057f427396eaf09f41e81/_sass/minimal-mistakes/_utilities.scss */
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /**** FOR TOCBOT ******/
 /** See: https://tscanlin.github.io/tocbot/ **/
 #tocbot-toc{
