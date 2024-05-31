@@ -1,7 +1,7 @@
 # TODO: Add your project title here
 title: Flutter Docker Template
 description: {{site.data.github.project.description}}
-baseurl: {{site.data.github.project.repository}}
+baseurl: "flutter-docker-template"
 url: {{site.data.github.project.repository_url}}
 github: [metadata]
 exclude: 
