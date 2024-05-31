@@ -1,6 +1,8 @@
-# TODO: Add your project title and baseurlhere
+# TODO: Add your project title here
 title: Flutter Docker Template
 description: A Flutter project template which able to quickly create a Flutter Web App environment through docker and develop with VSCode.
+
+# TODO: Add your repository name here
 baseurl: "flutter-docker-template"
 url: https://github.com/liuyuweitarek/
 github: [metadata]
@@ -67,7 +69,9 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
+
+#  TODO: Add your repository url here
 gh_edit_repository: https://github.com/liuyuweitarek/flutter-docker-template/ # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
+gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
