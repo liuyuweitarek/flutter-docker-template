@@ -16,7 +16,7 @@ exclude:
   - ".editorconfig"
 
 remote_theme: just-the-docs/just-the-docs@v0.8.1
-color_scheme: dark
+color_scheme: tarek
 
 # Define Jekyll collections
 collections:
