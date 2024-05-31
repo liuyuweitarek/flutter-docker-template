@@ -2,7 +2,7 @@
 title: Flutter Docker Template
 description: {{site.data.github.project.description}}
 baseurl: "flutter-docker-template"
-url: {{site.data.github.author.link}}
+url: https://github.com/liuyuweitarek/
 github: [metadata]
 exclude: 
   - "Dockerfile"
