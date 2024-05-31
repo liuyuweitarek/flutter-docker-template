@@ -2,9 +2,16 @@
 title: Flutter Docker Template
 description: A Flutter project template which able to quickly create a Flutter Web App environment through docker and develop with VSCode.
 
-# TODO: Add your repository name here
-baseurl: "."
-url: https://github.com/liuyuweitarek/flutter-docker-template/
+# TODO: Add your repository name here and select corresponding way to link it 
+# on `gh-pages`, set like this:
+baseurl: "flutter-docker-template" 
+url: https://github.com/liuyuweitarek/
+
+# on `local jekyll server`, set like this: 
+# baseurl: ""
+# url: "https://github.com/liuyuweitarek/flutter-docker-template/"
+
+
 github: [metadata]
 exclude: 
   - "Dockerfile"
